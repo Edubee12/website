@@ -1,0 +1,576 @@
+body {
+  font-family: "Montserrat";
+  text-align: center
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold"
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: cornflowerblue;
+  border-width: 5px;
+  width: 10%;
+  position: relative;
+  left: 200px
+}
+
+figcaption {
+  font-size: 1.0rem;
+  color: grey;
+  text-align: center;
+  padding: 0;
+  margin: 0
+}
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5
+}
+
+.container-fluid {
+  padding: 2% 15%
+}
+
+.colored-section {
+  background-color: cornflowerblue;
+  color: #fff;
+  background-image: url(https://transparenttextures.com/patterns/cubes.png)
+}
+
+.white-section {
+  background-color: #F7F7F7;
+  background-image: url(https://transparenttextures.com/patterns/cubes.png)
+  }
+
+.navigation-bar {
+  padding: 0 5%
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  font-weight: 700
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px
+}
+
+.nav-item {
+  padding: 0 18px
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light"
+}
+
+.navbar-link {
+  margin-left: 60%
+}
+
+.showme-button {
+  text-align: center;
+  margin-top: 5%
+}
+
+.alarm-clock {
+  color: #610094
+}
+
+.starthere-button {
+  text-align: center;
+  position: relative;
+  bottom: 20px
+}
+
+#title {
+  color: #fff;
+  text-align: left
+}
+
+.homepage {
+  background-image: url(https://drive.google.com/uc?id=1wZggynXq6FR3Q9ElL2TQsQbGh-9IIJof);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  height: 600px
+}
+
+.header-text {
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.16rem;
+  line-height: 1;
+  font-weight: bolder;
+  margin-top: 0;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.homepage-text {
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+}
+
+.checksquare {
+  color: #610094
+}
+
+#features {
+  position: relative
+}
+
+.feature-title {
+  font-size: 1.5rem
+}
+
+.feature-box {
+  padding: 3.5%;
+  text-align: left;
+
+}
+
+.feature-images {
+  height: 150px;
+  width: 200px
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 20%;
+  padding-right: 20%
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px
+}
+
+.edwin-pic {
+  height: 350px;
+  width: 240px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 0
+}
+
+.about-text {
+  text-align: left;
+  line-height: 1.5
+}
+
+.pricing-column {
+  padding: 3% 2%
+}
+
+.hr-workwithme {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: cornflowerblue;
+  border-width: 5px;
+  width: 50%;
+  position: relative;
+  left: 200px
+}
+
+.workwithme-icon {
+  margin: 20px 10px;
+  font-size: 4rem;
+  color: #610094
+}
+
+.bookappointment:hover {
+  color: #02a0da
+}
+
+.social-icon {
+  margin: 0 10px
+}
+
+.copyright-text {
+  text-align: left
+}
+
+.freesessionbutton {
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0
+}
+
+.bottom-text {
+  margin-bottom: 0
+}
+
+#footer {
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+
+.terms {
+  text-align: left;
+  text-decoration: none;
+  color: #000
+}
+
+/* Blog Section */
+.Blogposts{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.blogheader{
+    font-size: 2.125rem;
+line-height: 2.625rem;
+margin-bottom: 20px;
+margin-top: 50px;
+margin-left: 100px;
+font-weight: 600;
+}
+.arrow-down {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  animation: arrowDown 1s infinite;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes arrowDown {
+  0% {
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    transform: rotate(45deg) translateY(15px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(0);
+  }
+}
+.blog-homepage{
+  background-image: url(https://drive.google.com/uc?id=1e9fLBpTORwzU7z6QF5BaRxJwXHFx2VdN);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  height: 600px
+}
+
+.blog {
+  color: #000;
+  padding-top: 20px;
+  font-weight: 400
+}
+
+.blog-paragraph {
+  text-align: left
+}
+
+.spantext {
+  font-size: .5rem;
+  color: grey
+}
+
+.blogphoto {
+  width: 75%;
+  height: auto;
+  text-align: left
+}
+
+.blogphotoblock {
+  text-align: center
+}
+
+.postcontent {
+  text-align: left
+}
+
+.postheader {
+  font-size: 1.5rem
+}
+.blognext{
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+#disclaimer, #termsofuse, #privacypolicy {
+  text-align: left
+}
+
+.disclaimerheader {
+  text-align: center
+}
+
+@media (max-width:1028px) {
+  #title {
+    text-align: center
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0)
+  }
+}
+
+#MindShiftingsystem {
+  padding: 0;
+}
+
+/* Headline Section- Roadmap */
+.header-images {
+  width: 50px;
+}
+
+.header-roadmap {
+  background-color: #4A4A4A;
+}
+
+.headline {
+  color: white;
+  background-color: #4A4A4A;
+}
+
+.headline_text_1 {
+  font-size: 1.565rem;
+  line-height: 22px;
+}
+
+.headline_text_2 {
+  font-size: 2.25rem;
+  line-height: 37px;
+}
+
+.headline_span {
+  text-decoration: underline;
+  color: #0DCAF0;
+  font-weight: bold;
+}
+
+.headline_text_3 {
+  font-size: 1.25rem;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.chevron {
+  font-size: 4.1875rem;
+  line-height: 23px;
+  color: #0DCAF0;
+}
+
+.button_text_1 {
+  font-size: 1.3125rem;
+  line-height: 25px;
+  color: white;
+  text-decoration: none;
+
+}
+
+.button_text_2 {
+  font-size: 0.875rem;
+  line-height: 15px;
+  color: white;
+}
+
+.bookingbutton {
+  padding-top: 20px;
+}
+
+.button_text_3 {
+  font-size: 0.875rem;
+  line-height: 23px;
+  color: #BBAFAF;
+  padding-bottom: 40px;
+}
+
+.testimonial_header {
+  font-size: 2.6025rem;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.youtube-video {
+  padding: 20px 0;
+}
+
+.img-testimonial {
+  width: 160px;
+}
+
+#roadmap-testimonials {
+  text-align: center;
+  background-image: url(https://transparenttextures.com/patterns/cubes.png);
+}
+
+.testimonial_text_1 {
+  font-size: 1.5rem;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.testimonial_text_2 {
+  font-size: 1.5rem;
+  line-height: 40px;
+  font-weight: bold;
+  color: #0DCAF0;
+}
+
+.testimonial_button_text_3 {
+  font-size: 0.875rem;
+  line-height: 23px;
+  color: #black;
+  padding-bottom: 40px;
+}
+
+/* Description */
+
+.description{
+  color: white;
+  background-color: #4A4A4A;
+}
+.description_headline{
+  font-size: 1.625rem;
+  line-height: 43px;
+  color: #white;
+  font-weight: bold;
+}
+
+.description_span{
+    color: #0DCAF0;
+      text-decoration: underline;
+}
+
+.description_text{
+  padding:  0 17%;
+  font-size: 1.25rem;
+  line-height: 40px;
+}
+.inline_text{
+  font-weight: bold;
+  font-size: 1.625rem;
+  line-height: 40px;
+}
+
+.about_image{
+  width: 200px;
+  margin-right: 50px;
+  margin-left: 100px;
+}
+
+/* Relationship Recovery roadmap Section */
+
+.roadmap-text{
+  color: white;
+  background-color: #4A4A4A;
+  padding-bottom: 20px;
+}
+
+.roadmap_header{
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 40px;
+}
+.roadmap_header_2{
+    color: #0DCAF0;
+  padding-top: 40px;
+  font-size: 2.215rem;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.checksquare{
+color: #0DCAF0;
+}
+
+
+.list-text{
+  text-align: left;
+        font-size: 1.25rem;
+    line-height: 34px;
+  padding: 0 20%;
+}
+
+.roadmap_header_3{
+  font-size: 2.4375rem;
+line-height: 51px;
+font-weight: bolder;
+}
+
+.end-text{
+  text-align: left;
+        font-size: 1.25rem;
+    line-height: 32px;
+  padding: 0 20%;
+}
+
+/* ThankYouPage */
+.thankyoupage-header{
+  background-color: #EEEEEE;
+  margin-bottom: 0rem;
+}
+.thankyou-headline{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+}
+.check{
+  font-size: 10rem;
+  color: #0DCAF0;
+}
+.thankyou-headline-2{
+  color: white;
+  font-size: 1.75rem;
+
+}
+.thankyoupage-section{
+  background-color: #9B9B9B;
+  padding: 2% 15%;
+  margin-top: 0rem;
+}
+.list-text-thankyoupage{
+  text-align: left;
+  font-size: 1.25rem;
+}
+.thankyou-image{
+  width: 220px;
+}
+
+/* Posts Section */
+
+.posts{
+  margin-left: 100px;
+
+}
+
+.postscontent{
+  text-align: left;
+  line-height: 2.5;
+  }
+
+  /* Blog Sidebar */
+
+.blogsidebar{
+  text-align: left;
+}
