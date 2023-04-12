@@ -1,4 +1,7 @@
 <%- include("partials/header"); -%>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=670539565079895&autoLogAppEvents=1" nonce="GtqcxBIH"></script>
+
 
 <section class="posts">
   <div class="row flex">
@@ -8,8 +11,8 @@
       </div>
       <div class="postscontent">
         <p><%- content -%></p>
-      </div>
-      <div class="row blognext border-top my-3" ">
+              </div>
+                    <div class="row blognext border-top my-3" ">
         <% if (previousPost) { %>
           <div class="col-md-6">
             <span class="postscontent"><%- previousPost.content.substring(0, 300) + '...' %>
@@ -31,6 +34,8 @@
           <div class="col-md-6"></div>
         <% } %>
       </div>
+      <div class="fb-comments" data-href="/posts/<%= post.slug %>" data-width="" data-numposts="5"></div>
+
 
     </div>
     <div class="col-md-3 blogsidebar">

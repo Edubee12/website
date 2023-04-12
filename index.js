@@ -313,7 +313,6 @@ app.post("/compose", async function(req, res) {
 });
 
 
-
 app.get("/posts/:slug", async function(req, res) {
   const requestedPostSlug = req.params.slug;
 
