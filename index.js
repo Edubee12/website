@@ -31,7 +31,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://Edubee12:uTau8mOP5e1HhMaO@cluster0.xbb7u.mongodb.net/CoachingBlogDB", {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true
 });
 mongoose.set('strictQuery', false);
@@ -141,6 +141,23 @@ app.get("/auth/google/compose",
 
 app.get("/login", function(req, res) {
   res.render("login", {
+    year: year
+  });
+});
+app.get("/privacypolicy", function(req, res) {
+  res.render("privacypolicy", {
+    year: year
+  });
+});
+
+app.get("/termsofuse", function(req, res) {
+  res.render("termsofuse", {
+    year: year
+  });
+});
+
+app.get("/disclaimer", function(req, res) {
+  res.render("disclaimer", {
     year: year
   });
 });
