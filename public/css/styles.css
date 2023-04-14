@@ -550,8 +550,8 @@ font-weight: bolder;
 /* Posts Section */
 
 .posts{
-  margin-left: 50px;
-    margin-left: 50px;
+  margin-left: 25px;
+    margin-right: 25px;
 
 }
 
@@ -582,5 +582,15 @@ font-weight: bolder;
   }
   body {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 899px) {
+  body {
+    font-size: 16px;
+  }
+  .blogsidebar{
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
