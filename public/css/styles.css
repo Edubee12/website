@@ -550,7 +550,8 @@ font-weight: bolder;
 /* Posts Section */
 
 .posts{
-  margin-left: 100px;
+  margin-left: 50px;
+    margin-left: 50px;
 
 }
 
@@ -571,7 +572,7 @@ font-weight: bolder;
   }
 
   .blogheader {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
   }
 
