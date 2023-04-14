@@ -1,7 +1,5 @@
 <%- include("partials/header"); -%>
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=670539565079895&autoLogAppEvents=1" nonce="GtqcxBIH"></script>
-
 
 <section class="posts">
   <div class="row flex">
@@ -34,7 +32,26 @@
           <div class="col-md-6"></div>
         <% } %>
       </div>
-      <div class="fb-comments" data-href="/posts/<%= post.slug %>" data-width="" data-numposts="5"></div>
+
+      <div id="disqus_thread"></div>
+      <script>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://biiedwin-com.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="/posts/<%= post.slug %>">comments powered by Disqus.</a></noscript>
 
 
     </div>
@@ -140,5 +157,6 @@ traumas and experiences!</p>
 
 </section>
 
+<script id="dsq-count-scr" src="//biiedwin-com.disqus.com/count.js" async></script>
 <script type="text/javascript"> var infolinks_pid = 3393111; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 <%- include("partials/footer"); -%>
