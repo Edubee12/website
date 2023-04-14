@@ -113,7 +113,7 @@ figcaption {
   font-size: 2.16rem;
   line-height: 1;
   font-weight: bolder;
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 #title .container-fluid {
@@ -123,10 +123,7 @@ figcaption {
 .homepage-text {
   color: #fff;
   text-align: left;
-  position: absolute;
-  top: 400px;
-  left: 0;
-  right: 0;
+  margin-top: 100px;
 }
 
 .checksquare {
@@ -312,6 +309,10 @@ font-weight: 600;
   padding-top: 80px;
 }
 
+.post-header{
+  margin-top: 25px;
+}
+
 #disclaimer, #termsofuse, #privacypolicy {
   text-align: left
 }
@@ -326,7 +327,7 @@ font-weight: 600;
   padding: 0;
 }
 
-/* Headline Section- Roadmap */
+/* Headline Section- FreeMasterClass*/
 .header-images {
   width: 50px;
 }
@@ -338,16 +339,17 @@ font-weight: 600;
 .headline {
   color: white;
   background-color: #4A4A4A;
+  padding: 7% 15%;
 }
 
 .headline_text_1 {
-  font-size: 1.565rem;
-  line-height: 22px;
+  font-size: 1.5rem;
+  line-height: 24px;
 }
 
 .headline_text_2 {
-  font-size: 2.25rem;
-  line-height: 37px;
+  font-size: 1.5rem;
+  line-height: 24px;
 }
 
 .headline_span {
@@ -369,7 +371,7 @@ font-weight: 600;
 }
 
 .button_text_1 {
-  font-size: 1.3125rem;
+  font-size: 1.25rem;
   line-height: 25px;
   color: white;
   text-decoration: none;
@@ -390,7 +392,6 @@ font-weight: 600;
   font-size: 0.875rem;
   line-height: 23px;
   color: #BBAFAF;
-  padding-bottom: 40px;
 }
 
 .testimonial_header {
@@ -405,7 +406,7 @@ font-weight: 600;
 }
 
 .img-testimonial {
-  width: 160px;
+  width: 100%;
 }
 
 #roadmap-testimonials {
@@ -433,86 +434,15 @@ font-weight: 600;
   padding-bottom: 40px;
 }
 
-/* Description */
+/* Client stories */
 
-.description{
+.client-stories{
   color: white;
   background-color: #4A4A4A;
+  padding: 7% 15%;
 }
-.description_headline{
-  font-size: 1.625rem;
-  line-height: 43px;
-  color: #white;
-  font-weight: bold;
-}
-
-.description_span{
-    color: #0DCAF0;
-      text-decoration: underline;
-}
-
-.description_text{
-  padding:  0 17%;
-  font-size: 1.25rem;
-  line-height: 40px;
-}
-.inline_text{
-  font-weight: bold;
-  font-size: 1.625rem;
-  line-height: 40px;
-}
-
-.about_image{
-  width: 200px;
-  margin-right: 50px;
-  margin-left: 100px;
-}
-
-/* Relationship Recovery roadmap Section */
-
-.roadmap-text{
-  color: white;
-  background-color: #4A4A4A;
-  padding-bottom: 20px;
-}
-
-.roadmap_header{
-  padding-top: 40px;
-  font-weight: 500;
-  font-size: 1.625rem;
-  line-height: 40px;
-}
-.roadmap_header_2{
-    color: #0DCAF0;
-  padding-top: 40px;
-  font-size: 2.215rem;
-  line-height: 28px;
-  font-weight: bold;
-}
-
-.checksquare{
-color: #0DCAF0;
-}
-
-
-.list-text{
-  text-align: left;
-        font-size: 1.25rem;
-    line-height: 34px;
-  padding: 0 20%;
-}
-
-.roadmap_header_3{
-  font-size: 2.4375rem;
-line-height: 51px;
-font-weight: bolder;
-}
-
-.end-text{
-  text-align: left;
-        font-size: 1.25rem;
-    line-height: 32px;
-  padding: 0 20%;
+.bookacall{
+    text-align: center;
 }
 
 /* ThankYouPage */
@@ -583,6 +513,71 @@ font-weight: bolder;
   body {
     font-size: 18px;
   }
+  .headline_text_1 {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+
+  .headline_text_2 {
+    font-size: 1.25rem;
+    line-height: 24px;
+  }
+  .button_text_1 {
+    font-size: 1rem;
+    line-height: 15px;
+    color: white;
+    text-decoration: none;
+
+  }
+  .testimonial_header {
+    font-size: 1.6025rem;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.testimonial_text_1 {
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-weight: bold;
+}
+.header-text {
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.50rem;
+  line-height: 1;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.homepage-text {
+  color: #fff;
+  text-align: left;
+  margin-top: 90px;
+  line-height: 1.0;
+  font-size: 1rem;
+  }
+.homepage {
+    background-image: url(https://drive.google.com/uc?id=1Ls4RkzLoGPq4GXhsGao55BVf1013zbJs);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    height: 600px;
+}
+.homepage-text p{
+  margin-bottom: 5px;
+}
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding-left: 0;
+    padding-right: 0;
+}
+.edwin-pic {
+    height: 350px;
+    width: 240px;
+    margin-right: 100px;
+    margin-left: 0px;
+    padding: 0;
+    text-align: left;
+}
 }
 
 @media (min-width: 767px) and (max-width: 899px) {
