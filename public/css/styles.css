@@ -242,7 +242,6 @@ figcaption {
 line-height: 2.625rem;
 margin-bottom: 20px;
 margin-top: 50px;
-margin-left: 100px;
 font-weight: 600;
 }
 .arrow-down {
@@ -321,16 +320,7 @@ font-weight: 600;
   text-align: center
 }
 
-@media (max-width:1028px) {
-  #title {
-    text-align: center
-  }
 
-  .title-image {
-    position: static;
-    transform: rotate(0)
-  }
-}
 
 #MindShiftingsystem {
   padding: 0;
@@ -573,4 +563,23 @@ font-weight: bolder;
 
 .blogsidebar{
   text-align: left;
+}
+
+@media (max-width:767px) {
+  #title {
+    text-align: center
+  }
+
+  .blogheader {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0)
+  }
+  body {
+    font-size: 18px;
+  }
 }
