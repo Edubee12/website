@@ -482,7 +482,7 @@ font-weight: 600;
 .posts{
   margin-left: 25px;
     margin-right: 25px;
-
+    padding-left: 150px;
 }
 
 .postscontent{
@@ -578,6 +578,12 @@ font-weight: 600;
     padding: 0;
     text-align: left;
 }
+.posts{
+  margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 0px;
+}
+
 }
 
 @media (min-width: 767px) and (max-width: 899px) {

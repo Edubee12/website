@@ -88,7 +88,8 @@ passport.use(
   new GoogleStrategy({
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/auth/google/compose",
+      callbackURL: "https://www.biiedwin.com/auth/google/compose"
+      ,
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
     function(accessToken, refreshToken, profile, done) {
@@ -236,20 +237,23 @@ app.get("/FreeMasterClass", function(req, res) {
 app.get("/compose", async function(req, res) {
   const post = await Post.findById(req.params.id)
 
-  if (req.isAuthenticated()){res.render("compose", {
-    post: {
-      categories: []
-    },
-    year: year
-  })}
-  else {
+  if (req.isAuthenticated()) {
+    res.render("compose", {
+      post: {
+        categories: []
+      },
+      year: year
+    })
+  } else {
     res.redirect("/login");
   }
 });
 
 app.get('/edit/:slug', async (req, res) => {
   try {
-    const post = await Post.findOne({ slug: req.params.slug });
+    const post = await Post.findOne({
+      slug: req.params.slug
+    });
 
     if (!post) {
       res.redirect('/404');
@@ -276,7 +280,9 @@ app.get('/edit/:slug', async (req, res) => {
 
 app.post('/edit/:slug', async (req, res) => {
   try {
-    const post = await Post.findOne({ slug: req.params.slug });
+    const post = await Post.findOne({
+      slug: req.params.slug
+    });
     post.title = req.body.title;
     post.content = req.body.content;
     post.categories = req.body.categories.split(',').map(category => category.trim());
@@ -294,7 +300,10 @@ app.post("/compose", async function(req, res) {
   const title = req.body.postTitle;
   const content = req.body.postBody;
   const categories = req.body.postCategories;
-  const slug = slugify(title, { lower: true, strict: true });
+  const slug = slugify(title, {
+    lower: true,
+    strict: true
+  });
 
   const newPost = new Post({
     title: title,
@@ -304,12 +313,12 @@ app.post("/compose", async function(req, res) {
   });
 
   try {
-  await newPost.save();
-  res.redirect("/blog");
-} catch (err) {
-  console.error(err);
-  res.redirect("/");
-}
+    await newPost.save();
+    res.redirect("/blog");
+  } catch (err) {
+    console.error(err);
+    res.redirect("/");
+  }
 });
 
 
@@ -325,14 +334,22 @@ app.get("/posts/:slug", async function(req, res) {
       return;
     }
     const previousPost = await Post.findOne({
-      _id: { $lt: post._id }
-    })
-      .sort({ _id: -1 })
+        _id: {
+          $lt: post._id
+        }
+      })
+      .sort({
+        _id: -1
+      })
       .limit(1);
     const nextPost = await Post.findOne({
-      _id: { $gt: post._id }
-    })
-      .sort({ _id: 1 })
+        _id: {
+          $gt: post._id
+        }
+      })
+      .sort({
+        _id: 1
+      })
       .limit(1);
     res.render("post", {
       post: post,
