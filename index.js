@@ -88,7 +88,7 @@ passport.use(
   new GoogleStrategy({
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "https://www.biiedwin.com/auth/google/compose"
+      callbackURL: "http://localhost:3000/auth/google/compose"
       ,
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
