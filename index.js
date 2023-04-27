@@ -277,6 +277,13 @@ app.get('/edit/:slug', async (req, res) => {
   }
 });
 
+app.get('/ads.txt', (req, res) => {
+  const publisherId = 'pub-4710677672311206';
+  const tagId = 'f08c47fec0942fa0';
+  res.type('text/plain');
+  res.render('ads', { publisherId, tagId });
+});
+
 
 app.post('/edit/:slug', async (req, res) => {
   try {
