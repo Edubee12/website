@@ -145,6 +145,14 @@ app.get("/login", function(req, res) {
     year: year
   });
 });
+
+const path = require('path');
+
+app.get('/xml', function(req, res) {
+  const filePath = path.join(__dirname, 'views', 'sitemap.xml');
+  res.sendFile(filePath);
+});
+
 app.get("/privacypolicy", function(req, res) {
   res.render("privacypolicy", {
     year: year
@@ -205,13 +213,17 @@ app.get('/blog', async (req, res) => {
       })
       .exec();
     const count = await Post.countDocuments();
+
+    const blogTitles = posts.map(post => post.title);
+   console.log(blogTitles);
+
     res.render('blog', {
       posts,
       year: year,
       current: currentPage,
       pages: Math.ceil(count / perPage)
     });
-  } catch (err) {
+      } catch (err) {
     console.error(err);
     res.render('error/500');
   }
