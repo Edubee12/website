@@ -1,7 +1,11 @@
-"scripts": {
-   "start": "node index.js"
-}
 {
+  "name": "24.1.2022",
+  "version": "1.0.0",
+  "description": "My coaching Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "body-parser": "^1.19.1",
     "bootstrap": "^5.2.3",
@@ -21,13 +25,6 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^8.0.0",
     "slugify": "^1.6.6"
-  },
-  "name": "24.1.2022",
-  "version": "1.0.0",
-  "description": "My coaching Website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bii Edwin",
   "license": "ISC",
