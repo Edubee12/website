@@ -214,9 +214,6 @@ app.get('/blog', async (req, res) => {
       .exec();
     const count = await Post.countDocuments();
 
-    const blogTitles = posts.map(post => post.title);
-   console.log(blogTitles);
-
     res.render('blog', {
       posts,
       year: year,
